@@ -1,0 +1,27 @@
+---
+title       : "Developing Data Products"
+subtitle    : "A presentation for the Coursera DS Certification class"
+author      : "Austin T"
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : standalone # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Intro
+
+The purpose of my Shiny App is to illustrate the process by which a Linear Regression line is calculated. 
+
+- The app can be found here at [ShinyApps.io][https://atidmore.shinyapps.io/9DDP] and my source 
+- The source code can be found on [GitHub][https://github.com/ATidmore/DataProducts_Project/tree/master]
+
+--- .class #id 
+
+## Slide 2
+
+
+
+
