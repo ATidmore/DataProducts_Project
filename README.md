@@ -1,2 +1,11 @@
-# DataProducts_Project
-Coursera DS Cert 9 - Developing Data Products Project
+# 9DDP
+Developing Data Products Project Repo
+
+
+This application has been submitted for the Coursera "Developing Data Products" class. 
+
+The app can be viewed at: <a href="https://atidmore.shinyapps.io/9DDP">Shiny.io</a> -- assuming there is still time on my free-tier account! 
+
+The source code for the app can be viewed here on Github.
+
+
