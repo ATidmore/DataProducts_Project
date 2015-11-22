@@ -43,14 +43,15 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Read-And-Delete</h2>
+    <h2>Project Purpose</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <p>The purpose of my Shiny App is to illustrate the process by which a Linear Regression line is calculated.</p>
+
+<ul>
+<li>The app can be found here at <a href="https://atidmore.shinyapps.io/9DDP">ShinyApps.io</a><br></li>
+<li>The source code can be found on <a href="https://github.com/ATidmore/DataProducts_Project/tree/master">GitHub</a></li>
+</ul>
 
   </article>
   <!-- Presenter Notes -->
@@ -58,10 +59,38 @@
 
 <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>The Data</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>Using the built-in &quot;mtcars&quot; dataset in R, I modeled a simple relationship between the car&#39;s weight (&quot;wt&quot;) and its fuel efficiency (&quot;mpg&quot;). We can see that the data points are negatively correlated.</p>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfgAAAH4CAMAAACR9g9NAAAAsVBMVEUAAAAAAFUAKysAK4AAVaoAzGYrAAArACsrAFUrK4ArVaorgNRVAABVACtVAFVVgIBVqv9/f39/f5R/f6p/lL9/qtSAKwCAKyuAgFWA1P+Uf3+UlL+Uv+qqVQCqVSuqf6qqlJSq1ICq1P+q/6qq//+/lH+/lJS/lKq/v9S/6v/UgCvUqn/U1IDU///l5eXqv5Tq1Krq///y8vL/qlX/1ID/1Kr/6r///6r//9T//+r///9Q0X34AAAACXBIWXMAAAsSAAALEgHS3X78AAAOHElEQVR4nO3dD3sS2RmG8WxX2926tU4S3NViY/HfRkqpUSrM9/9gnUnAZAWGw/DMmfPMud/LK2rWzc/jzTlAgOSsZLKcs77/Akw/Q/hMh/CZDuEzHcJnOoTPdAif6RA+0yF8pkP4TIfwmQ7hM5394adFMbl9e34d8e/DRJq94Rejcnk1W71/UP0/23Oz432HZtfHOTQtnEiMjRMavpoq/PL1y2JU/7qo5pQLGJPYNISfFuNycTEr55P1OxK56KbF2Djh4ctyPq7fLsaEH4ATGr7OPR/fvmXHD8EJ3vHV7fnR7dvNhie8tXPMUf/dJLKCtBgbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGIbyWsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbJzY4R8/Vq8gcFyCxHIih3/8eKs84QnfagWB4xIklhM5PEd9Kk7s8PoVpMXYOITXMjYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNg7htYyNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNk6a4befhH2y4xIklnNC+BvN7Pg49csuRB+9ielkXJwkd/yO19uc7LjsxFhOkuE56rt30gx/zArSYmwcwmsZG4fwWsbGIbyWsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbBzCaxkbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGIbyWsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbBzCaxkbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGIbyWsXEIr2VsHMJrGRuH8FrGxtGGf/C69kMvcZetIC3GxpGGf/CVLA5+UQvZCgLHJUgsh/BaxsaRhueo93G04RP+l3IJEsshvJaxcQivZWyc4PDTopjUb8+vCT8EJzT8YlQur2aLy0/VD8IPwAne8WUdfj6u31a/Lqpp+KOM2zSEnxbjcj4pVx9m63ckctFNi7FxwsOX5Xz8bccT3t0JDb8Y1+G5jh+ME7zjq1v1I27VD8c55qj/bhJZQVqMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNg7htYyNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNg7htYyNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNg7htYyNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjEF7L2DgnhL/RjOrjpMHYOP3t+M33LmHHu+3401bw7bsVEZ7wrVYQOC5BYjm9heeo79fpL7xqBWkxNg7htYyNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNg7htYyNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjJBZ+80S8I1bQhgkcwscK/+2pt0esoAUTOoQn/OCctMJz1EdzEgvfYgVpMTYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNg7htYyNQ3gtY+MQXsvYOITXMjZOaPjVu6K4/FROi+L8mvADcELDL0ZlOZ2s3l/fvyuRFaTF2Dih4euZT5avXxaj+pdFNU1/lDGbpvDVpl9czKr8698nctFNi7FxwsNPR+v+Y8IPwAkNv3o3WUdnxw/CCQ0/ra/Vx/VPmw1PeGsn/KjfmkRWkBZj4xBey9g4hNcyNg7htYyNk3P4g6/eSHg5hG/PHH69VsLLIXx7hvCZhueozzV8F4yNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNg7htYyNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI1DeC1j4xBey9g4hNcyNk764Xe97OH08EHf9YjwPYbf+UKnk8OHfZ+zbMN//eXsdn54S/h2TtgkF7589aR68/HR5x9nvYXnqO/Gad7xT9/evn3zdNeWT2QFaTE2TmP45fPbHf/jv3/ucccfWkFajI3TfNSXr6pr+Edff3m2ozvhrZ0D4ZvmRjOqj5MGY+OcED6Ri25ajI3THH75vD7qCT9ApzH8+sbdnvKJrCAtxsZpDL+5O7fz8zeEt3Yaw99tdnb8EJ3mHb/+lO3uz9kmsoK0GBunecc3TiIrSIuxcZrDf254jIbw1k5j+K9/e8GOH6jTHH7P7XnC+zuN4cuPTwg/UOdAeK7jh+o0huc6frhOc3iu4wfrNIZP8Tr+9jlThI/ymbuUruPvniVJ+Ow+c3c4/J6nUe5mmp9zSfh0wh886vc9cXonc+BZ1oRPKPwhh/BhzuDCc9SHOcML3y9j4xBey9g4hNcyNo59+P3X0n/8Ly5BYjnu4fffLv/uv7gEieUQPogJHxfHPTxHfUvHPnxijI1DeC1j4xBey9g4hNcyNg7htYyNQ3gtY+MQXsvYOITXMjYO4bWMjUN4LWPjEF7L2DiE1zI2DuG1jI0TGn71riguP5XT4vya8ENwQsMvRmU5nSwuP1U/CD8AJzR8PfPJfFwur+ovaFxU0/RHGbNpCl9t+vmkXH3YfCXrRC66aTE2Tnj4aXXYf9vxhHd3QsOv3k3qTc91/FCc0PDT+lp9bHCrft9z8FyCxHLCj/qtSWQFf5y9z7p1CRLLIXwrZv+4OEMLz1Ef6AwufM+MjUN4LWPjEF7L2DiE1zI2DuF3zfoWYgCzdVuS8LFW0AGzuU94mNm+90j4WCvogCF8puE56nMN356xcQivZWwcwmsZG4fwWsbGIbyWsXEIv2vCb9Wf5qyH8G1W0AETfj/+NGczhG+zgg4YwmcanqM+1/DtGRuH8FrGxiG8lrFxCK9lbBzCaxkbh/BaxsYh/O5p+51MCR9tBZ0wrb+TKeGjraAThvCZhueozzV8W8bGIbyWsXEIv2t4kCbP8DwsS/hOnc0Qvs0KumA46jMN356xcQivZWwcwmsZG+eE8DeaUX2cNBgbhx1/PLP/+xhrncbhqI/O7P/O5VqneQgfnSF8GiuIz3DUJ7GCtBgbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGIbyWsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbBzCa5m10/g4jtA5bgjfHXPnND9yq3OOHMJ3xxA+2grSYjjqo60gLcbGIbyWsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbJx8wwfc1U54OYRvy4R8ci3h5RC+LUP4TMNz1OcavhvGxiF8E3PcYy3tnRb/D+E7ZI58dLW1Q/g2K+iQIXym4Tnqcw3f4v9xcQi/awK+suW+w4DwsVbQARPwtWz3Xv0TPtYKOmAI/3CWV7OynBbF+fXgw3931O9MnM1RvyguZuXq/fX9exJZQefMcXfqhhZ+9fvqw6xcvn5ZjOrfFtXsPxyGNXX4vv8OnU/DUV+HX1S7fj5ZvyORi273zFH35oe24+/C17MY5xZ+kM6RO76Knt+OH6Rz5I6vbtVvNjzhU3e2rqK4H98dk5CzfW+E8N0xCTmEj8mk5HDUR2RsHMJrGRuH8FrGxiH8YSbzz9xlGz7vB2kI37lz3BC+e4ajPtPwg3QIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbBzCaxkbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGIbyWsXEIfxqz9cgd4WOtoFdm+7F6wsdaQa8M4ftbQb8MR31vK0iLsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbBzCaxkbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGOSH8jWZUHycNxsZhx2sZG4fwWsbGIbyWsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbBzCaxkbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGIbyWsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbBzCaxkbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGIbyWsXEIr2VsHMJrGRuH8FrGxiG8lrFxCK9lbBzCaxkbh/BaxsYhvJbp39n6Cvr37yF8d0zvzvb3zLh/D+G7Y3p3CN8P07/DUd8LY+MQXsvYOITXMjZOePjl1awsp8X5NeGH4ASHXxQXs3Jx+an6QfgBOKHhV7+vPszK+fhu45dFNfsPB8ZuGo762/CT25/uJpGLblqMjXNk+M2OJ7y7c1x4ruMH4xwXnlv1g3HCw29NIitIi7FxCK9lbBzCaxkbh/BaxsYhvJaxcQivZWwcwmsZG4fwWsbGOSG8aCI92BPrMSVTh/CZOoTP1CF8pk4P4ZkUhvCZDuEzHcJnOoTPdGKHX70rim/P5epwpkUx6V6pZz6OoVTruX8qlGJih1+MqkV0n6Ri7p8k2q1UxAi/ei+tXvZz1M+j7MU44f/3j//GCL98/bIYST9iD+EX2hXsmWmUnVhduhYxnMXFTLxf4oefRulexrnyndevMIpyJV/Flzrxb9xFOefrf6Q4t7rEPRoQ7x0/jbRFKifSyRIlfL0ercP9+EyH8JkO4TMdwmc6hM90CP9wvvz0tu+/Qqwh/MMhfFazfP6s/PKXF+XnP/357IdcyhO+mo9Pyo9nz6qf2PF5zZefZ//87dHy1xeEz2u+Pn3z9F8/vXn6lvCZzau//3X562+PuHGX23w+u7uWJ3xmc3ubvrpBv3zOrXpm2EP4TIfwmQ7hMx3CZzqEz3QIn+kQPtMhfKZD+Ezn/8nwq4l7c2LiAAAAAElFTkSuQmCC" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>The Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The application will allow a user to learn how a Linear Regression line is created by optimizing the position of the line his/herself. A message displays to the user if he/she optimized the line - according to the Least Squares method (excerpt below).
+<img src="data:image/png;base64,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" alt="plot of chunk unnamed-chunk-3"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>I hope you enjoyed using my ShinyApp to find the optimal Linear Regression line! </p>
+
+<p>Best of luck to you as you continue on the Coursera Data Science Certification. </p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -72,14 +101,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Read-And-Delete'>
+        data-slide=1 title='Project Purpose'>
          1
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='The Data'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Application'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Conclusion'>
+         4
       </a>
     </li>
   </ul>
